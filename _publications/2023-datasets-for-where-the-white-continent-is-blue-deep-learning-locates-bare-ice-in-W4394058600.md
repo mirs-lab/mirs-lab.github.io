@@ -1,0 +1,8 @@
+---
+name: "Datasets for \"Where the White Continent is blue: deep learning locates bare ice in Antarctica\""
+authors: "Veronica Tollenaar, Harry Zekollari, Frank Pattyn, **Marc Rußwurm**, Benjamin Kellenberger, Stef Lhermitte, Maaike Izeboud, Devis Tuia"
+year: "2023"
+link: "https://doi.org/10.5281/zenodo.8333865"
+venue: "Zenodo (CERN European Organization for Nuclear Research)"
+order: "31"
+---

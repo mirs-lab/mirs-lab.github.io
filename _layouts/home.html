@@ -1,0 +1,37 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<h3 class="archive__subtitle">Research Group</h3>
+
+<div class="members-grid">
+  {% assign people = site.members | sort: "order" %}
+  {% for m in people %}
+    {% include member-card.html member=m %}
+  {% endfor %}
+</div>
+
+
+<h3 class="archive__subtitle">Recent Papers</h3>
+
+{% assign papers = site.publications | sort: "year" | reverse %}
+
+<ul class="papers-list">
+  {% for p in papers limit:10 %}
+    <li class="papers-list__item">
+      <span class="papers-list__authors">
+        {{ p.authors | markdownify | remove: '<p>' | remove: '</p>' }}
+      </span>
+      <span class="papers-list__title">
+        <a href="{{ p.link }}" target="_blank" rel="noopener">{{ p.name }}</a>
+      </span>
+      <span class="papers-list__venue">
+        — {{ p.venue }}{% if p.year %} ({{ p.year }}){% endif %}
+      </span>
+    </li>
+  {% endfor %}
+</ul>
+
+{% include paginator.html %}

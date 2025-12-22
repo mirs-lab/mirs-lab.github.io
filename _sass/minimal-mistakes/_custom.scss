@@ -1,0 +1,66 @@
+body { outline: 10px solid red; }
+
+.members-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.member-card{
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+.member-card__image{
+  height: 180px;
+  background: #e9eef6;
+}
+
+.member-card__image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* crops nicely like your mockup */
+  display: block;
+}
+
+.member-card__body{
+  padding: 1rem 1rem 1.1rem;
+}
+
+.member-card__name{
+  font-weight: 800;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  margin-bottom: .35rem;
+}
+
+.member-card__position{
+  font-size: .9rem;
+  opacity: .8;
+  margin-bottom: .8rem;
+}
+
+.member-card__blurb{
+  font-size: .9rem;
+  margin-bottom: .9rem;
+}
+
+.member-card__btn{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .55rem .85rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  background: #f2d47a;         /* “pale yellow” */
+  color: #1b1b1b;
+}
+
+.member-card__btn:hover{
+  filter: brightness(.97);
+}

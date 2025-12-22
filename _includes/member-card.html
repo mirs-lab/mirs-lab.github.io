@@ -1,0 +1,35 @@
+<div class="member-card">
+  <div class="member-card__image">
+    {% if include.member.image %}
+      <img
+        src="{{ include.member.image | relative_url }}"
+        alt="{{ include.member.name }}"
+        loading="lazy"
+      >
+    {% endif %}
+  </div>
+
+  <div class="member-card__body">
+    <div class="member-card__name">
+      {% if include.member.website %}
+        <a class="member-card__name-link"
+           href="{{ include.member.website }}"
+           target="_blank"
+           rel="noopener">
+          {{ include.member.name }}
+        </a>
+      {% else %}
+        {{ include.member.name }}
+      {% endif %}
+    </div>
+
+    <div class="member-card__position">{{ include.member.position }}</div>
+
+    {% assign blurb = include.member.content | strip %}
+    {% if blurb != "" %}
+      <div class="member-card__blurb">
+        {{ blurb | markdownify }}
+      </div>
+    {% endif %}
+  </div>
+</div>

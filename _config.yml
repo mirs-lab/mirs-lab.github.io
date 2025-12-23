@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : # "MIRS Lab"
+title                    : 
 title_separator          : # "-"
 subtitle                 : 
 name                     : # Marc Rußwurm
@@ -26,7 +26,8 @@ url                      : # https://mirs-lab.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : mirs-lab/mirs-lab.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # /assets/images/logo.png
+logo                     : 
+masthead_logos:
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
@@ -34,8 +35,12 @@ enable_copy_code_button  : # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 collections:
-  - members
-  - publications
+  members:
+    output: false
+  publications:
+    output: false
+  research_topics:
+    output: true
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:

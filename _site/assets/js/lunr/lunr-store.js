@@ -1,8 +1,50 @@
 var store = [{
+        "title": "Alexandros",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/members/alexandros/",
+        "teaser": null
+      },{
+        "title": "Britt",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/members/britt/",
+        "teaser": null
+      },{
         "title": "Claire",
         "excerpt":" ","categories": [],
         "tags": [],
         "url": "/members/claire/",
+        "teaser": null
+      },{
+        "title": "Gabriele",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/members/gabriele/",
+        "teaser": null
+      },{
+        "title": "Giel",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/members/giel/",
+        "teaser": null
+      },{
+        "title": "Jhon",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/members/jhon/",
+        "teaser": null
+      },{
+        "title": "Joost",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/members/joost/",
+        "teaser": null
+      },{
+        "title": "Levien",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/members/levien/",
         "teaser": null
       },{
         "title": "Marc",
@@ -11,10 +53,52 @@ var store = [{
         "url": "/members/marc/",
         "teaser": null
       },{
+        "title": "Milou",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/members/milou/",
+        "teaser": null
+      },{
+        "title": "Naut",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/members/naut/",
+        "teaser": null
+      },{
+        "title": "Ryan",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/members/ryan/",
+        "teaser": null
+      },{
+        "title": "Stijn",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/members/stijn/",
+        "teaser": null
+      },{
+        "title": "Takayuki",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/members/takayuki/",
+        "teaser": null
+      },{
+        "title": "Tessa",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/members/tessa/",
+        "teaser": null
+      },{
         "title": "Vishal",
         "excerpt":" ","categories": [],
         "tags": [],
         "url": "/members/vishal/",
+        "teaser": null
+      },{
+        "title": "Wessel",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/members/wessel/",
         "teaser": null
       },{
         "title": "Yochul",
@@ -345,5 +429,29 @@ var store = [{
         "excerpt":" ","categories": [],
         "tags": [],
         "url": "/publications/2025-11-03-measuring-the-intrinsic-dimension-of-earth-representations-W4416017845/",
+        "teaser": null
+      },{
+        "title": "Large-scale Crop Type Mapping with Deep Time Series Classifiers",
+        "excerpt":"Crop types are best recognized from how fields change over time (phenology), not from a single image. Our work focuses on parcel-level crop mapping in Europe using Sentinel-2 time series, with models that (1) learn directly from raw observations, (2) scale to large areas, and (3) can make early predictions...","categories": [],
+        "tags": [],
+        "url": "/research_topics/crop-type-mapping/",
+        "teaser": null
+      },{
+        "title": "Earth Embeddings and Geospatial Representation Learning",
+        "excerpt":"Learning general-purpose representations that capture spatial, temporal, and contextual signals across Earth. Embeddings, explained simply An embedding is a short list of numbers that acts like a fingerprint for something complex (an image, text, or a place). Similar fingerprints mean similar content—enabling fast search, grouping, and prediction. Key papers and...","categories": [],
+        "tags": [],
+        "url": "/research_topics/earth-embeddings/",
+        "teaser": null
+      },{
+        "title": "Few-Shot Meta-Learning and Transfer Learning",
+        "excerpt":"Remote sensing models often fail when moved to a new region, new sensor, or new task—even if the label name stays the same (“urban”, “forest”, “water”). Meta-learning tackles this by training models to adapt quickly: instead of requiring thousands of new labels, the model can learn a new situation from...","categories": [],
+        "tags": [],
+        "url": "/research_topics/few-shot-meta-learning/",
+        "teaser": null
+      },{
+        "title": "Marine Litter Monitoring with Remote Sensing and AI Models",
+        "excerpt":"Marine plastic pollution is hard to measure at scale: surveys are expensive and sparse, while remote sensing offers repeatable coverage—if we can make detection reliable across conditions, sensors, and geographies (Rußwurm et al., 2023) Snap Snap Track (Open Mind proposal concept, 2025) Research direction: multi-scale monitoring We work on end-to-end...","categories": [],
+        "tags": [],
+        "url": "/research_topics/marine-litter-monitoring/",
         "teaser": null
       }]

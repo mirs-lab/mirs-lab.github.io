@@ -7,8 +7,12 @@ layout: archive
 <h3 class="archive__subtitle">Research Group</h3>
 
 <div class="members-grid">
-  {% assign people = site.members | sort: "order" %}
-  {% for m in people %}
+  {% assign leaders = site.members | where: "label", "leader" | sort: "order" %}
+  {% assign phds = site.members | where: "label", "PhD" | sort: "order" %}
+  {% for m in leaders %}
+    {% include member-card.html member=m %}
+  {% endfor %}
+  {% for m in phds %}
     {% include member-card.html member=m %}
   {% endfor %}
 </div>
@@ -19,7 +23,7 @@ layout: archive
 {% assign papers = site.publications | sort: "year" | reverse %}
 
 <ul class="papers-list">
-  {% for p in papers limit:10 %}
+  {% for p in papers limit:5 %}
     <li class="papers-list__item">
       <span class="papers-list__authors">
         {{ p.authors | markdownify | remove: '<p>' | remove: '</p>' }}

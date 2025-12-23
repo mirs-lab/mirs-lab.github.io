@@ -14,5 +14,43 @@
   "yochul jeong": {
     "openalex_author_id": null,
     "note": "no candidates"
+  },
+  "gabriele tijunaityte": {
+    "openalex_author_id": "https://openalex.org/A5093605615",
+    "picked_display_name": "Gabriel\u0117 Tij\u016bnaityt\u0117",
+    "picked_institution": null,
+    "picked_works_count": 1
+  },
+  "giel hagenbeek": {
+    "openalex_author_id": "https://openalex.org/A5116147134",
+    "picked_display_name": "Giel Hagenbeek",
+    "picked_institution": null,
+    "picked_works_count": 3
+  },
+  "jhon restrepo": {
+    "openalex_author_id": "https://openalex.org/A5023723306",
+    "picked_display_name": "John Fernando Restrepo Tamayo",
+    "picked_institution": null,
+    "picked_works_count": 102
+  },
+  "levien van krieken": {
+    "openalex_author_id": null,
+    "note": "no candidates"
+  },
+  "milou maathuis": {
+    "openalex_author_id": "https://openalex.org/A5120658740",
+    "picked_display_name": "Milou Maathuis",
+    "picked_institution": null,
+    "picked_works_count": 1
+  },
+  "takayuki ishikawa": {
+    "openalex_author_id": "https://openalex.org/A5017171769",
+    "picked_display_name": "Takayuki Ishikawa",
+    "picked_institution": null,
+    "picked_works_count": 487
+  },
+  "wessel eshuis": {
+    "openalex_author_id": null,
+    "note": "no candidates"
   }
 }

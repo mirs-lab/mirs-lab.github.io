@@ -1,0 +1,26 @@
+<article class="research-topic-card">
+  {% if include.topic.image %}
+    <div class="research-topic-card__media">
+      <img src="{{ include.topic.image | relative_url }}" alt="{{ include.topic.title }}">
+    </div>
+  {% endif %}
+  <div class="research-topic-card__body">
+    <h3 class="research-topic-card__title">{{ include.topic.title }}</h3>
+    {% if include.topic.period %}
+      <div class="research-topic-card__period">{{ include.topic.period }}</div>
+    {% endif %}
+    {% if include.topic.topic_tags %}
+      <div class="research-topic-card__tags">
+        {% for tag in include.topic.topic_tags %}
+          <span class="research-topic-card__tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+    <div class="research-topic-card__desc">
+      {{ include.topic.description | markdownify | remove: "<p>" | remove: "</p>" }}
+    </div>
+    {% if include.topic.url or include.topic.link %}
+      <a class="research-topic-card__cta" href="{{ include.topic.url | default: include.topic.link | relative_url }}">Learn More</a>
+    {% endif %}
+  </div>
+</article>

@@ -25,6 +25,25 @@
 
     <div class="member-card__position">{{ include.member.position }}</div>
 
+
+    {% if include.member.thesis_title %}
+      <div class="member-card__thesis">
+        {% if include.member.thesis_url %}
+          <a href="{{ include.member.thesis_url }}" target="_blank" rel="noopener">
+            {{ include.member.thesis_title }}
+          </a>
+        {% else %}
+          {{ include.member.thesis_title }}
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if include.member.cosupervisors %}
+      <div class="member-card__cosupervisors">
+        Co-supervisors: {{ include.member.cosupervisors | join: ", " }}
+      </div>
+    {% endif %}
+
     {% assign blurb = include.member.content | strip %}
     {% if blurb != "" %}
       <div class="member-card__blurb">

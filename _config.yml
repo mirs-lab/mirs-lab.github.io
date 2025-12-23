@@ -118,7 +118,7 @@ analytics:
 author:
   name             : #"MIRS Research Group"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Intelligent algorithms for socio-economic & environmental analysis with remote sensing"
+  bio              : "Intelligent AI models for socio-economic & environmental analysis with remote sensing"
   location         : University of Bonn
   email            : #marc.russwurm@ilr.uni-bonn.de
   links:

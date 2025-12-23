@@ -23,6 +23,9 @@ Icon
 # Thumbnails
 ._*
 
+_site/
+feed.xml
+
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
 .fseventsd

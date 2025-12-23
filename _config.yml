@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : 
+title                    : " "
 title_separator          : # "-"
 subtitle                 : 
 name                     : # Marc Rußwurm
@@ -35,12 +35,9 @@ enable_copy_code_button  : # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 collections:
-  members:
-    output: false
-  publications:
-    output: false
-  research_topics:
-    output: true
+  - members
+  - publications
+  - research_topics
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:

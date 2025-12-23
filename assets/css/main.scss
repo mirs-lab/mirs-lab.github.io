@@ -8,6 +8,7 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* MEMBER CARDS */
 
 .members-grid{
   display: grid;
@@ -90,9 +91,115 @@ search: false
   margin-top: 0 !important;
 }
 
+/* PAPER LIST */
+
+/* Publications list — compact card style */
+.papers-list{
+  list-style:none;
+  margin:0;
+  padding:0;
+
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(15,38,74,0.10);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(10,24,44,0.08);
+  overflow:hidden;
+  backdrop-filter: blur(6px);
+
+  /* smaller overall type */
+  font-size: 0.92rem;
+}
+
+/* tighter rows */
 .papers-list__item{
-  font-size: .72rem;   /* smaller */
-  line-height: 1.2;
-  padding: .25rem 0;   /* tighter */
-  border-bottom: 1px solid rgba(0,0,0,.06);
+  position:relative;
+  padding: 12px 14px 10px 34px; /* reduced */
+}
+
+/* thinner separators */
+.papers-list__item + .papers-list__item{
+  border-top: 1px solid rgba(15,38,74,0.08);
+}
+
+/* smaller gold bullet */
+.papers-list__item::before{
+  content:"";
+  position:absolute;
+  left: 14px;
+  top: 16px;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background:#f0b429;
+  box-shadow: 0 0 0 3px rgba(240,180,41,0.16);
+}
+
+.papers-list__authors,
+.papers-list__title,
+.papers-list__venue{
+  display:block;
+  line-height: 1.25; /* tighter */
+}
+
+/* compact title */
+.papers-list__title{
+  font-weight: 750;
+  margin: 0 0 3px 0;
+}
+
+.papers-list__title a{
+  color:#163f74;
+  text-decoration:none;
+}
+.papers-list__title a:hover{ text-decoration:underline; }
+
+/* compact meta */
+.papers-list__authors{
+  color: rgba(11,26,42,0.70);
+  font-size: 0.88em;
+  margin: 0 0 2px 0;
+}
+
+.papers-list__venue{
+  color: rgba(11,26,42,0.58);
+  font-size: 0.86em;
+}
+
+/* mobile */
+@media (max-width:600px){
+  .papers-list{ font-size: 0.90rem; }
+  .papers-list__item{ padding: 11px 12px 9px 32px; }
+  .papers-list__item::before{ left: 12px; }
+}
+
+/* 1) Make the page itself transparent */
+html, body { height: 100%; }
+body { background: transparent !important; }
+
+/* 2) Fixed full-viewport background layer */
+body::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  background: url("/assets/images/bg-texture.jpg") top center / cover no-repeat;
+  /* If you prefer full-width without cropping, use:
+     background-size: 100% auto;
+  */
+}
+
+/* 3) Remove/override theme white panels that hide it */
+.initial-content,
+.page,
+.page__content,
+.archive,
+.layout--single .page__content,
+.layout--home .page__content{
+  background: transparent !important;
+}
+
+/* Optional: keep the main text readable with a subtle translucent panel */
+.page__content {
+  backdrop-filter: blur(0px);
 }

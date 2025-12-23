@@ -2,5 +2,5 @@
 layout: home
 author_profile: true
 header:
-  image: /assets/images/header.png
+  image: /assets/images/header_no_texture.png
 ---

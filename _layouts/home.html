@@ -25,7 +25,7 @@ layout: archive
         {{ p.authors | markdownify | remove: '<p>' | remove: '</p>' }}
       </span>
       <span class="papers-list__title">
-        <a href="{{ p.link }}" target="_blank" rel="noopener">{{ p.name }}</a>
+        <a href="{{ p.link }}" target="_blank" rel="noopener">{{ p.title }}</a>
       </span>
       <span class="papers-list__venue">
         — {{ p.venue }}{% if p.year %} ({{ p.year }}){% endif %}

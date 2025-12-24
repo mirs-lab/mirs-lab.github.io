@@ -56,9 +56,12 @@ search: false
 
 .members-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(70px, 130px));
+  --member-card-min: 100px;
+  --member-card-max: 150px;
+  grid-template-columns: repeat(auto-fit, minmax(var(--member-card-min), 1fr));
   gap: .65rem;
   align-items: stretch;
+  justify-items: stretch;
 }
 
 .member-card{
@@ -67,6 +70,8 @@ search: false
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,.06);
   border: 1px solid rgba(0,0,0,.06);
+  width: 100%;
+  max-width: var(--member-card-max);
 }
 
 /* Portrait image slot (more vertical) */

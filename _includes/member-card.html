@@ -26,7 +26,7 @@
     <div class="member-card__position">{{ include.member.position }}</div>
 
 
-    {% if include.member.thesis_title %}
+    {% if include.show_thesis != false and include.member.thesis_title %}
       <div class="member-card__thesis">
         {% if include.member.thesis_url %}
           <a href="{{ include.member.thesis_url }}" target="_blank" rel="noopener">

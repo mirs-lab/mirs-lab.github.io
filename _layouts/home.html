@@ -9,11 +9,15 @@ layout: archive
 <div class="members-grid">
   {% assign leaders = site.members | where: "label", "leader" | sort: "order" %}
   {% assign phds = site.members | where: "label", "PhD" | sort: "order" %}
+  {% assign msc_current = site.members | where: "label", "MSc" | where: "current_msc", true | sort: "end" | reverse %}
   {% for m in leaders %}
     {% include member-card.html member=m %}
   {% endfor %}
   {% for m in phds %}
     {% include member-card.html member=m %}
+  {% endfor %}
+  {% for m in msc_current %}
+    {% include member-card.html member=m show_thesis=false %}
   {% endfor %}
 </div>
 

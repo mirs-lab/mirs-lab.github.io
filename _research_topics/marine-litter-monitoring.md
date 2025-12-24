@@ -30,7 +30,7 @@ We work on **end-to-end pipelines** that connect:
 
 ### [Large-scale Detection of Marine Debris in Coastal Areas with Sentinel-2](https://www.sciencedirect.com/science/article/pii/S2589004223024793) (iScience, 2023)
 Main contributions:
-- Introduces a **pixel-wise marine debris detector** (deep segmentation) for **medium-resolution Sentinel-2** imagery.  [oai_citation:1‡arXiv](https://arxiv.org/abs/2307.02465)
+- Introduces a **pixel-wise marine debris detector** (deep segmentation) for **medium-resolution Sentinel-2** imagery. 
 - Shows that performance gains come largely from **data-centric design** (many hard negatives + label refinement), not just architecture tweaks. 
 - Releases **model weights and training code** to support reproducible large-scale monitoring. 
 

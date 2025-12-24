@@ -35,9 +35,13 @@ enable_copy_code_button  : # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 collections:
-  - members
-  - publications
-  - research_topics
+  members:
+    output: false
+  publications:
+    output: false
+  research_topics:
+    output: true
+    permalink: /research/:path/
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:

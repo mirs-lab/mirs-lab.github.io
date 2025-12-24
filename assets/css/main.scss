@@ -56,7 +56,7 @@ search: false
 
 .members-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(70px, 130px));
   gap: .65rem;
   align-items: stretch;
 }
@@ -88,20 +88,20 @@ search: false
 }
 
 .member-card__body{
-  padding: 1rem 1rem 1.1rem;
+  padding: .7rem .9rem .5rem;
 }
 
 .member-card__name{
   font-weight: 800;
-  font-size: 1rem;
+  font-size: .8rem;
   line-height: 1.2;
   margin-bottom: .35rem;
 }
 
 .member-card__position{
-  font-size: .9rem;
+  font-size: .7rem;
   opacity: .8;
-  margin-bottom: .8rem;
+  margin-bottom: .1rem;
 }
 
 .member-card__dates{
@@ -111,7 +111,7 @@ search: false
 }
 
 .member-card__thesis{
-  font-size: .9rem;
+  font-size: .7rem;
   font-weight: 700;
   margin-bottom: .45rem;
 }
@@ -132,7 +132,7 @@ search: false
 }
 
 .member-card__blurb{
-  font-size: .9rem;
+  font-size: .7rem;
   margin-bottom: .9rem;
 }
 

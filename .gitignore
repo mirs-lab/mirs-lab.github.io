@@ -23,7 +23,7 @@ Icon
 # Thumbnails
 ._*
 
-_site/
+_site
 feed.xml
 
 # Files that might appear in the root of a volume
